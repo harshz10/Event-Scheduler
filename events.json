@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "Team Meeting",
+    "description": "Weekly sync",
+    "start_time": "2025-07-01T10:00:00+05:30",
+    "end_time": "2025-07-01T11:00:00+05:30",
+    "email": "team@example.com",
+    "recurring": "1 week"
+  },
+  {
+    "id": 2,
+    "title": "Doctor Appointment",
+    "description": "Consultation with Dr. Ahuja regarding annual health check-up.",
+    "start_time": "2025-07-02T09:00:00+05:30",
+    "end_time": "2025-07-02T09:30:00+05:30",
+    "email": "user@example.com",
+    "recurring": "1 month"
+  },
+  {
+    "id": 3,
+    "title": "Submit Final Project Report",
+    "description": "Deadline to submit the final report to the manager.",
+    "start_time": "2025-07-05T17:00:00+05:30",
+    "end_time": "2025-07-05T17:30:00+05:30",
+    "email": "manager@example.com",
+    "recurring": "1 day"
+  },
+  {
+    "id": 4,
+    "title": "Parent-Teacher Meeting",
+    "description": "Meeting with the class teacher to discuss academic performance.",
+    "start_time": "2025-07-06T08:30:00+05:30",
+    "end_time": "2025-07-06T09:00:00+05:30",
+    "email": "parents@example.com",
+    "recurring": "none"
+  },
+  {
+    "id": 5,
+    "title": "AI and the Future of Work",
+    "description": "Webinar discussing how AI will impact jobs and skills.",
+    "start_time": "2025-07-08T19:00:00+05:30",
+    "end_time": "2025-07-08T20:00:00+05:30",
+    "email": "events@techinsights.com",
+    "recurring": "2 week"
+  }
+]
