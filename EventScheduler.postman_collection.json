@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "0b8657de-fecd-44cc-b6ed-a54f53adfe80",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46078852",
+		"_collection_link": "https://harsh-5275259.postman.co/workspace/harsh's-Workspace~caf3ef02-d61c-450a-84eb-6b1429e5812c/collection/46078852-0b8657de-fecd-44cc-b6ed-a54f53adfe80?action=share&source=collection_link&creator=46078852"
+	},
+	 "item": [
+    {
+      "name": "Create Events",
+      "item": [
+        {
+          "name": "Create Team Meeting",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\": \"Team Meeting\",\n    \"description\": \"Weekly sync\",\n    \"start_time\": \"2025-07-01T10:00:00+05:30\",\n    \"end_time\": \"2025-07-01T11:00:00+05:30\",\n    \"email\": \"team@example.com\",\n    \"recurring\": \"1 week\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/events",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["events"]
+            }
+          }
+        },
+        {
+          "name": "Create Doctor Appointment",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\": \"Doctor Appointment\",\n    \"description\": \"Consultation with Dr. Ahuja regarding annual health check-up.\",\n    \"start_time\": \"2025-07-02T09:00:00+05:30\",\n    \"end_time\": \"2025-07-02T09:30:00+05:30\",\n    \"email\": \"user@example.com\",\n    \"recurring\": \"1 month\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/events",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["events"]
+            }
+          }
+        },
+        {
+          "name": "Create Project Report Deadline",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\": \"Submit Final Project Report\",\n    \"description\": \"Deadline to submit the final report to the manager.\",\n    \"start_time\": \"2025-07-05T17:00:00+05:30\",\n    \"end_time\": \"2025-07-05T17:30:00+05:30\",\n    \"email\": \"manager@example.com\",\n    \"recurring\": \"1 day\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/events",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["events"]
+            }
+          }
+        },
+        {
+          "name": "Create Parent-Teacher Meeting",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\": \"Parent-Teacher Meeting\",\n    \"description\": \"Meeting with the class teacher to discuss academic performance.\",\n    \"start_time\": \"2025-07-06T08:30:00+05:30\",\n    \"end_time\": \"2025-07-06T09:00:00+05:30\",\n    \"email\": \"parents@example.com\",\n    \"recurring\": \"none\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/events",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["events"]
+            }
+          }
+        },
+        {
+          "name": "Create AI Webinar",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\": \"AI and the Future of Work\",\n    \"description\": \"Webinar discussing how AI will impact jobs and skills.\",\n    \"start_time\": \"2025-07-08T19:00:00+05:30\",\n    \"end_time\": \"2025-07-08T20:00:00+05:30\",\n    \"email\": \"events@techinsights.com\",\n    \"recurring\": \"2 week\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/events",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["events"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Get All Events",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/events",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["events"]
+        }
+      }
+    },
+    {
+      "name": "Update Event",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\": \"Updated Team Meeting\",\n    \"description\": \"Revised weekly sync with new agenda\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/events/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["events", "1"]
+        }
+      }
+    },
+    {
+      "name": "Delete Event",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/events/2",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["events", "2"]
+        }
+      }
+    },
+    {
+      "name": "Search Events",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/events/search?q=Meeting",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["events", "search"],
+          "query": [
+            {
+              "key": "q",
+              "value": "Meeting"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
