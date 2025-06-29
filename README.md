@@ -1,4 +1,4 @@
-# Event Scheduler System - README
+# Event Scheduler System 
 
 ```markdown
 # Event Scheduler System
